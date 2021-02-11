@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E2BAA27-F770-4189-900B-50C6EE327A66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PFE</RootNamespace>
+    <AssemblyName>PFE</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Downloads\Compressed\Bunifu_UI_v1.52\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrateur.cs" />
+    <Compile Include="Admin\AdminDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMessagerie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMessagerie.Designer.cs">
+      <DependentUpon>AdminMessagerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AjouterEnseignant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\AjouterEnseignant.Designer.cs">
+      <DependentUpon>AjouterEnseignant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDeFiliere.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDeFiliere.Designer.cs">
+      <DependentUpon>GestionDeFiliere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDElement.Designer.cs">
+      <DependentUpon>GestionDElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDeModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDeModule.Designer.cs">
+      <DependentUpon>GestionDeModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDesEnseignants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDesEnseignants.Designer.cs">
+      <DependentUpon>GestionDesEnseignants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDesEtudiants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDesFilieres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDesFilieres.Designer.cs">
+      <DependentUpon>GestionDesFilieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDesNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDesNotes.Designer.cs">
+      <DependentUpon>GestionDesNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModifierEnseignant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\ModifierEnseignant.Designer.cs">
+      <DependentUpon>ModifierEnseignant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SupprimerEnseignant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\SupprimerEnseignant.Designer.cs">
+      <DependentUpon>SupprimerEnseignant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Accueil_ens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Accueil_ens.Designer.cs">
+      <DependentUpon>Accueil_ens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Composer_messagerie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Composer_messagerie.Designer.cs">
+      <DependentUpon>Composer_messagerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant_etudiants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant_etudiants.Designer.cs">
+      <DependentUpon>Enseignant_etudiants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant_messagerie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant_messagerie.Designer.cs">
+      <DependentUpon>Enseignant_messagerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Ens_abscence.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Ens_abscence.Designer.cs">
+      <DependentUpon>Ens_abscence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\NouvelleAbs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\NouvelleAbs.Designer.cs">
+      <DependentUpon>NouvelleAbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Profile_Ens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Profile_Ens.Designer.cs">
+      <DependentUpon>Profile_Ens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant UI\Accueil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Etudiant UI\Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Classes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant.Designer.cs">
+      <DependentUpon>Enseignant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant_emploie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enseignant UI\Enseignant_emploie.Designer.cs">
+      <DependentUpon>Enseignant_emploie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant.Designer.cs">
+      <DependentUpon>Etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant_abscence.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant_abscence.Designer.cs">
+      <DependentUpon>Etudiant_abscence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant_Notes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant_Notes.Designer.cs">
+      <DependentUpon>Etudiant_Notes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant_parcours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Etudiant UI\Etudiant_parcours.Designer.cs">
+      <DependentUpon>Etudiant_parcours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant UI\Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Etudiant UI\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personne.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Enseignant.cs" />
+    <Compile Include="_Etudiant.cs" />
+    <EmbeddedResource Include="Admin\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminMessagerie.resx">
+      <DependentUpon>AdminMessagerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDeFiliere.resx">
+      <DependentUpon>GestionDeFiliere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDElement.resx">
+      <DependentUpon>GestionDElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDeModule.resx">
+      <DependentUpon>GestionDeModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDesEnseignants.resx">
+      <DependentUpon>GestionDesEnseignants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDesFilieres.resx">
+      <DependentUpon>GestionDesFilieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDesNotes.resx">
+      <DependentUpon>GestionDesNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Accueil_ens.resx">
+      <DependentUpon>Accueil_ens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Composer_messagerie.resx">
+      <DependentUpon>Composer_messagerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Enseignant_etudiants.resx">
+      <DependentUpon>Enseignant_etudiants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Enseignant_messagerie.resx">
+      <DependentUpon>Enseignant_messagerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Ens_abscence.resx">
+      <DependentUpon>Ens_abscence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\NouvelleAbs.resx">
+      <DependentUpon>NouvelleAbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Profile_Ens.resx">
+      <DependentUpon>Profile_Ens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant UI\Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Enseignant.resx">
+      <DependentUpon>Enseignant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enseignant UI\Enseignant_emploie.resx">
+      <DependentUpon>Enseignant_emploie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant UI\Etudiant.resx">
+      <DependentUpon>Etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant UI\Etudiant_abscence.resx">
+      <DependentUpon>Etudiant_abscence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant UI\Etudiant_Notes.resx">
+      <DependentUpon>Etudiant_Notes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant UI\Etudiant_parcours.resx">
+      <DependentUpon>Etudiant_parcours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etudiant UI\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

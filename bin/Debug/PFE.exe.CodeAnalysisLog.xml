@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\bin\Debug\PFE.exe">
+   <Modules>
+    <Module Name="pfe.exe">
+     <Namespaces>
+      <Namespace Name="PFE">
+       <Types>
+        <Type Name="Etudiant_Notes" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#bunifuDropdown2_onItemSelected(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Etudiant UI" File="Etudiant_Notes.cs" Line="30">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Etudiant_Notes.bunifuDropdown2_onItemSelected(object, EventArgs)' n'a pas pu contenir les variables 'this.Etd.gsCNE', 'this.bunifuDropdown2.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Etudiant_Notes_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Etudiant UI" File="Etudiant_Notes.cs" Line="40">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Etudiant_Notes.Etudiant_Notes_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Etd.gsCNE' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Etudiant UI" File="Etudiant_Notes.cs" Line="48">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Etudiant_Notes.Etudiant_Notes_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Etd.gsCNE', 'this.bunifuDropdown2.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Form1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE" File="Form1.cs" Line="79">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Form1.button1_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.cin.Text', 'this.password.Text' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillAdmin()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE" File="Form1.cs" Line="163">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Form1.FillAdmin()' n'a pas pu contenir les variables 'this.cin.Text' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillEns()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE" File="Form1.cs" Line="138">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Form1.FillEns()' n'a pas pu contenir les variables 'this.cin.Text' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE" File="Form1.cs" Line="148">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Form1.FillEns()' n'a pas pu contenir les variables 'this.cin.Text' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillEtd()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE" File="Form1.cs" Line="121">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Form1.FillEtd()' n'a pas pu contenir les variables 'this.cin.Text' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Profile" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Profile_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Etudiant UI" File="Profile.cs" Line="44">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Profile.Profile_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Etd.gsCNE' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PFE.Admin">
+       <Types>
+        <Type Name="AdminProfile" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AdminProfile_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="AdminProfile.cs" Line="31">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'AdminProfile.AdminProfile_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.admin.gsCin' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GestionDesFilieres" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button10_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="357">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button10_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.MmodifierM.selectedValue', 'this.MmodifierF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button11_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="382">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button11_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.textBox5.Text', 'Convert.ToInt32(this.textBox6.Text.ToString())' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button12_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="423">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button12_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.EajoutM.selectedValue', 'this.EajoutF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button13_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="459">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button13_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.EsuppE.selectedValue', 'this.EsuppM.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button14_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="484">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button14_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.EmodifierE.selectedValue', 'this.EmodifierM.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button15_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="509">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button15_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.textBox9.Text', 'Convert.ToInt32(this.textBox10.Text.ToString())' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button4_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="139">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button4_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.filiereSupp.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button5_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="164">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button5_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.filiereChoice.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button6_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="189">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button6_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.textBox11.Text', 'Convert.ToInt32(this.textBox12.Text.ToString())' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button9_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="332">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'GestionDesFilieres.button9_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.MsuppM.selectedValue', 'this.MSuppF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EajoutF_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="258">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.EajoutF_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.EajoutF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EModifierF_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="288">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.EModifierF_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.EModifierF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EmodifierM_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="298">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.EmodifierM_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.EmodifierM.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ESuppF_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="268">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.ESuppF_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.ESuppF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EsuppM_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="278">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.EsuppM_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.EsuppM.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MmodifierF_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="318">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.MmodifierF_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.MmodifierF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MSuppF_onItemSelected_1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Admin" File="GestionDesFilieres.cs" Line="308">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'GestionDesFilieres.MSuppF_onItemSelected_1(object, EventArgs)' n'a pas pu contenir les variables 'this.MSuppF.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PFE.Enseignant_UI">
+       <Types>
+        <Type Name="Classes" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Afficher_note()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Classes.cs" Line="49">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Classes.Afficher_note()' n'a pas pu contenir les variables 'this.bunifuDropdown1.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#afficher_noteNoInsererted()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Classes.cs" Line="68">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Classes.afficher_noteNoInsererted()' n'a pas pu contenir les variables 'this.bunifuDropdown1.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Classes.cs" Line="194">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Classes.button2_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.Note.Text', 'this.CNE.Text', 'a' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Classes.cs" Line="157">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Classes.button2_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.bunifuDropdown1.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Classes.cs" Line="188">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Classes.button2_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.bunifuDropdown1.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Classes_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Classes.cs" Line="84">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Classes.Classes_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Ens.gsCin' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Composer_messagerie" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#bunifuThinButton21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Composer_messagerie.cs" Line="87">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Composer_messagerie.bunifuThinButton21_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.esta_destination.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Ens_abscence" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#bunifuThinButton21_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Ens_abscence.cs" Line="94">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Ens_abscence.bunifuThinButton21_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.CIN', 'this.students_liste.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Ens_abscence_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Ens_abscence.cs" Line="120">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Ens_abscence.Ens_abscence_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.CIN' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#students_liste_onItemSelected(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Ens_abscence.cs" Line="65">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Ens_abscence.students_liste_onItemSelected(object, EventArgs)' n'a pas pu contenir les variables 'this.CIN', 'this.students_liste.selectedValue' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Enseignant_emploie" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Enseignant_emploie_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="Enseignant_emploie.cs" Line="38">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Enseignant_emploie.Enseignant_emploie_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Ens.gsCin' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NouvelleAbs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#bunifuThinButton22_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Enseignant UI" File="NouvelleAbs.cs" Line="199">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'NouvelleAbs.bunifuThinButton22_Click(object, EventArgs)' n'a pas pu contenir les variables 'this.Element_Abscence' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PFE.Etudiant_UI">
+       <Types>
+        <Type Name="Etudiant_abscence" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Etudiant_abscence_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Etudiant UI" File="Etudiant_abscence.cs" Line="32">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Etudiant_abscence.Etudiant_abscence_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Etd.gsCNE' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Etudiant_parcours" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Etudiant_parcours_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-03-28 16:13:47Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jamal benali\Desktop\Nouveau dossier (3)\pfeMaTache\PFE_DernierVersion\PFE_Finale\PFE\PFE\Etudiant UI" File="Etudiant_parcours.cs" Line="30">La chaîne de requête passée en 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' dans 'Etudiant_parcours.Etudiant_parcours_Load(object, EventArgs)' n'a pas pu contenir les variables 'this.Etd.gsCNE' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PFE.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2019-03-28 16:13:47Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Évitez le recours à du code privé non appelé</Name>
+   <Description>Il existe du code non appelé qui n'est pas visible de l'extérieur et ne constitue pas un point d'entrée connu du runtime. Si cette violation provoque une erreur, signalez le problème à l'équipe Visual Studio Code Analysis.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Vérifier si les requêtes SQL présentent des failles de sécurité</Name>
+   <Description>Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Microsoft SQL Server ainsi que d'autres serveurs de base de données prennent en charge les procédures stockées et les requêtes SQL paramétrables, qui réduisent les risques de telles attaques.</Description>
+   <Resolution Name="WithNonLiterals">La chaîne de requête passée en {0} dans {1} n'a pas pu contenir les variables {2} suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Catégorie</String>
+  <String Key="Certainty">Certitude</String>
+  <String Key="CollapseAll">Réduire tout</String>
+  <String Key="CheckId">ID de contrôle</String>
+  <String Key="Error">Erreur</String>
+  <String Key="Errors">erreur(s)</String>
+  <String Key="ExpandAll">Développer tout</String>
+  <String Key="Help">Aide</String>
+  <String Key="Line">Ligne</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Emplacement non stocké dans le fichier Pdb]</String>
+  <String Key="Project">Projet</String>
+  <String Key="Resolution">Résolution</String>
+  <String Key="Rule">Règle</String>
+  <String Key="RuleFile">Fichier de règles</String>
+  <String Key="RuleDescription">Description de la règle</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">État</String>
+  <String Key="Target">Cible</String>
+  <String Key="Warning">Avertissement</String>
+  <String Key="Warnings">avertissement(s)</String>
+  <String Key="ReportTitle">Rapport d'analyse du code</String>
+ </Localized>
+</FxCopReport>
